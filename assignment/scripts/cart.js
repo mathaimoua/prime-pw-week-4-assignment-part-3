@@ -20,7 +20,7 @@ console.log( 'Testing addItem, adding "Chocolate" to basket, should return True:
     addItem( "Chocolate" ));
 
 function listItems(){
-    for ( item of basket ){
+    for ( let item of basket ){
         console.log( item );
     }
 }
@@ -57,7 +57,7 @@ console.log( 'Testing isFull, returning True if full. Should return True now:', 
 
 function removeItem( item ){
     let removed;
-    for ( x of basket ){
+    for ( let x of basket ){
         if ( x === item ){
             removed = item;
             basket.splice(basket.indexOf(x), 1);
